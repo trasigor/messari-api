@@ -1,0 +1,28 @@
+{
+    "name": "trasigor/messari-api",
+    "description": "Laravel wrapper for messari.io api",
+    "type": "library",
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/support": "5.*",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Traskovetskyi",
+            "email": "trasigor@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Trasigor\\Messari\\MessariServiceProvider"
+            ],
+            "aliases": {
+                "Messari": "Trasigor\\Messari\\MessariFacade"
+            }
+        }
+    }
+}
